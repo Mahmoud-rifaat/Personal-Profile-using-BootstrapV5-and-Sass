@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <title>Mahmoud Refaat</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link
@@ -41,22 +41,22 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">portfolio</a>
+              <a class="nav-link" href="#portfolio">portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="#contact">contact</a>
             </li>
           </ul>
-          <button type="button" class="rounded-pill btn-rounded">
+          <button type="button" class="rounded-pill btn-rounded" onclick="openWhatsAppChat()">
             +20 1114563871
             <span>
               <i class="fas fa-phone-alt"></i>
@@ -74,13 +74,12 @@
           <!-- Start the content for the intro -->
           <div class="col-md-6 intros">
             <h1 class="display-2">
-              <span class="display-2--intro">Hey!, I'm Mahmoud Refaat</span>
+              <span class="display-2--intro">Hi!, I'm Mahmoud Refaat</span>
               <span class="display-2--description lh-base"
-                >This is a fully responsive portfolio created by me using bootstrap v5
-                customized with sass preprocessor. And it is my current portfolio</span
+                >This is a fully responsive website created by me to showcase my web development skills. And it is my current portfolio</span
               >
             </h1>
-            <button type="button" class="rounded-pill btn-rounded">
+            <button type="button" class="rounded-pill btn-rounded" onclick="openWhatsAppChat()">
               Get in Touch
               <span>
                 <i class="fas fa-arrow-right"></i>
@@ -586,7 +585,62 @@
             </div>
             <!-- Portfolio items -->
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="images/portfolio/Bankist-advanced.png" alt="portfolio-1 image" title="portfolio-1 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>Bankist App</h4>
+                            <p>project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/mapty.png" alt="portfolio-1 image" title="portfolio-1 picture" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <h4>Mapty App</h4>
+                          <p>project</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow" href="https://mahmoud-rifaat.github.io/complete-javascript-course-master/07-Pig-Game/starter/">
+                <img src="images/portfolio/pig-game.png" alt="portfolio-1 image" title="portfolio-1 picture" class="img-fluid">
+                <div class="portfolio-info">
+                    <div class="caption">
+                        <h4>Pig game</h4>
+                        <p>Game</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+              <img src="images/portfolio/guess-my-number.png" alt="portfolio-1 image" title="portfolio-1 picture" class="img-fluid">
+              <div class="portfolio-info">
+                  <div class="caption">
+                      <h4>guess-my-number game</h4>
+                      <p>Game</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+              <img src="images/portfolio/static-ecommerce.png" alt="portfolio-1 image" title="portfolio-1 picture" class="img-fluid">
+              <div class="portfolio-info">
+                  <div class="caption">
+                      <h4>Ecommerce App</h4>
+                      <p>project</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="portfolio-box shadow">
                         <img src="images/portfolio/portfolio-1.jpg" alt="portfolio-1 image" title="portfolio-1 picture" class="img-fluid">
                         <div class="portfolio-info">
@@ -684,7 +738,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -759,7 +813,7 @@
                         <path d="M15 3a6 6 0 0 1 6 6" />
                     </svg>
                     </div>
-                    <div class="contact-box__info">
+                    <div class="contact-box__info" onclick="openWhatsAppChat()">
                         <a href="" class="contact-box__info--title">+20 1114536871</a>
                         <p class="contact-box__info--subtitle"> Sat-Thu 9am-6pm</p>
                     </div>
@@ -776,7 +830,7 @@
                         </svg>
                     </div>
                     <div class="contact-box__info">
-                        <a href="" class="contact-box__info--title">mahmoud.ref2at.dev@gmail.com</a>
+                        <a href="mailto:mahmoud.ref2at.dev@gmail.com" class="contact-box__info--title">mahmoud.ref2at.dev@gmail.com</a>
                         <p class="contact-box__info--subtitle">Online support</p>
                     </div>
                 </div>
@@ -807,10 +861,10 @@
                         Connect with us on social media
                     </div>
                     <div class="col-lg-7 col-md-6 mx-auto">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/mahmoud.rifaat0/"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/DevRef2at"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://github.com/Mahmoud-rifaat"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/mahmoud-refaat-a862b2251/"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -838,17 +892,17 @@
                     <h5 class="text-capitalize fw-bold">Useful links</h5>
                     <hr class="bg-white d-inline-block mb-4" style="width:60px;height:2px">
                     <ul class="list-inline company-list">
-                        <li><a href="#">Gmail</a></li>
-                        <li><a href="#">Become an affiliate</a></li>
-                        <li><a href="#">Create an account</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="mailto:mahmoud.ref2at.dev@gmail.com" >Gmail</a></li>
+                        <li><a href="mailto:mahmoud.ref2at.dev@gmail.com" >Become an affiliate</a></li>
+                        <!-- <li><a href="#">Create an account</a></li> -->
+                        <li><a href="mailto:mahmoud.ref2at.dev@gmail.com" >Help</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
                     <h5 class="text-capitalize fw-bold">Contact</h5>
                     <hr class="bg-white d-inline-block mb-4" style="width:60px;height:2px">
                     <ul class="list-inline company-list">
-                        <li><a href="#">01114536871</a></li>
+                        <li><a target="_blank" href="https://wa.me/01114536871">01114536871</a></li>
                         <!-- <li><a href="#">Lorem ipsum</a></li>
                         <li><a href="#">Lorem ipsum</a></li>
                         <li><a href="#">Lorem ipsum</a></li> -->
@@ -885,5 +939,6 @@
     </script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/helpers.js"></script>
   </body>
 </html>
